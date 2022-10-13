@@ -1,4 +1,4 @@
-package com.example.controllers;
+package com.example.viewcontrollers;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
-//@RequestMapping("/api")
-public class MainController {
-	final static Logger logger = Logger.getLogger(MainController.class);
+public class MainViewController {
+	final static Logger logger = Logger.getLogger(MainViewController.class);
 
 	
 	@RequestMapping("/")
