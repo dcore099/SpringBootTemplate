@@ -10,7 +10,7 @@ import com.example.service.BasicUserService;
 @RestController
 @RequestMapping("/api")
 public class MainRestController {
-	
+	/*
 	@Autowired
 	BasicUserService service;
 	
@@ -18,6 +18,7 @@ public class MainRestController {
 	 * Endpoint para llamar el pkg
 	 * @return
 	 */
+	/*
 	@GetMapping("/call")
 	public String call() {
 		String param1 = "valor1 bla";
@@ -25,5 +26,6 @@ public class MainRestController {
 		
 		return service.getData(param1, param2);
 	}
+	*/
 
 }

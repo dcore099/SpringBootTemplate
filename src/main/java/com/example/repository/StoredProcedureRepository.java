@@ -1,8 +1,9 @@
 package com.example.repository;
-
+/*
 import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
+*/
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,16 +13,17 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class StoredProcedureRepository {
 	final static Logger logger = Logger.getLogger(StoredProcedureRepository.class);
-
+/*
 	@Autowired
 	private EntityManager em;
 	
-	/**
-	 * Realiza la llamada al procedimiento almacenado en BD
-	 * @param param1
-	 * @param param2
-	 * @return	String con valor de la respuesta del procedimiento
-	 */
+/**
+ * Calls one stored procedure from this repository
+ * @param param1
+ * @param param2
+ * @return
+ */
+	/*
 	public String callProcedure(String param1, String param2) {
 		String salida="Sin datos del procedimiento almacenado..";
 		
@@ -42,4 +44,5 @@ public class StoredProcedureRepository {
 		
 		return salida;
 	}
+	*/
 }

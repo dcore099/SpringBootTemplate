@@ -14,21 +14,9 @@
 </head>
 <body>
 	<div class="container-md pt-5 my-5 border">
-		<h1>captura</h1>
-		<form method="post" th:action="@{/doStuff}">
-			<div class="mb-3">
-				<label for="parametro uno" class="form-label">parametro 1: </label>
-				<input type="text" class="form-control" th:name="param1" />
-
-			</div>
-			<div class="form-outline mb-3">
-				<label for="parametro dos" class="form-label">parámetro 2: </label>
-				<input type="text" class="form-control" th:name="param2" />
-			</div>
-			<button type="submit" class="btn btn-primary">Enviar</button>
-		</form>
+		<h1>Welcome!</h1>
+		<a th:href="@{/capture}">Capture form</a>
 	</div>
-
 
 
 </body>

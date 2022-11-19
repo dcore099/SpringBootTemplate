@@ -8,6 +8,6 @@ public interface BasicUserService {
 	 * @param param2
 	 * @return
 	 */
-	public String getData(String param1, String param2);
+	//public String getData(String param1, String param2);
 
 }
