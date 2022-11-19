@@ -1,7 +1,14 @@
-# demoWsVista
-Demo con Spring boot para llamar procedimiento almacenado en base de datos
+Spring boot template for:
 
+
+*Thymeleaf 
+*Spring data JPA
+
+
+
+NOTES:
 #odbc
-*descargar y agregar en repositorio maven, ej. odbc7
+*Download OJDBC from oracle, then install it to local maven repository with the following
+(ojdbc7 version 2.1.0.2 example)
 
-mvn install:install-file -Dfile=D:\Downloads\Java\ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2 -Dpackaging=jar
+$mvn install:install-file -Dfile=D:\Downloads\Java\ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2 -Dpackaging=jar
