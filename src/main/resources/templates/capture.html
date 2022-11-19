@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Capture template</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/css/custom.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-md pt-5 my-5 border form-floating mb-3 form-container">
+		<h1>Form</h1>
+		<form action="#" th:action="@{/capture}" th:object="${myAttribute}" method="post">
+			
+			<div class="form-floating mb-3">
+				<input type="number" class="form-control" th:field="*{id}" id="parameter1" placeholder="id"/> 
+				<label for="parameter1">id</label>
+			</div>
+			
+			<div class="form-floating mb-3">
+				<input type="text" class="form-control" th:field="*{value}" id="parameter2" placeholder="value"/> 
+				<label for="parameter2">Value</label>
+			</div>			
+			<p>
+				<input type="submit" value="Submit" class="btn btn-primary" />
+			</p>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+</html>
