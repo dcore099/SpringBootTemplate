@@ -22,11 +22,11 @@ public class MainViewController {
 	/**
 	 * Mapping for home page
 	 * @return
-	 */
+	 *//*
 	@RequestMapping("/")
 	public String main() {
 		return "home";
-	}
+	}*/
 
 	
 	
@@ -35,7 +35,7 @@ public class MainViewController {
 	 * @param model
 	 * @return
 	 */
-	@GetMapping("/capture")
+	@GetMapping("/")
 	public String greetingForm(Model model) {
 		model.addAttribute("myAttribute", new MyDataObject());
 		return "capture";
