@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class StoredProcedureRepository {
 	final static Logger logger = Logger.getLogger(StoredProcedureRepository.class);
-/*
+	/*
 	@Autowired
 	private EntityManager em;
 	
@@ -25,24 +25,24 @@ public class StoredProcedureRepository {
  */
 	/*
 	public String callProcedure(String param1, String param2) {
-		String salida="Sin datos del procedimiento almacenado..";
+		String out="No data from store procedure..";
 		
 		StoredProcedureQuery query = this.em.createNamedStoredProcedureQuery("SR.PROCEDURE_NAME");
 		
-		//	Registramos los parametros de entrada y salida
+		//	Declare IN/OUT parameters from our store procedure
 		query.registerStoredProcedureParameter("entrada_1_proc", String.class, ParameterMode.IN);
 		query.registerStoredProcedureParameter("entrada_2_proc", String.class, ParameterMode.IN);
 		query.registerStoredProcedureParameter("valor_salida_proc", String.class, ParameterMode.OUT);
 		
-		//	Inicializamos los parametros para llamar el procedimiento almacenado
+		//	Initialize the values for our declared parameters
 		query.setParameter("entrada_1_proc", param1);
 		query.setParameter("entrada_2_proc", param2);
 		
-		//	Llamamos el procedimiento almacenado y tomamos la salida
-		salida = ((String) query.getOutputParameterValue("Result_Param")).toString();
-		logger.info("valor de salida: "+salida);
+		//	Call the stored procedure and get the output
+		out = ((String) query.getOutputParameterValue("Result_Param")).toString();
+		logger.info("output: "+out);
 		
-		return salida;
+		return out;
 	}
 	*/
 }
