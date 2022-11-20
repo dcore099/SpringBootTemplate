@@ -27,5 +27,10 @@ public class MainRestController {
 		return service.getData(param1, param2);
 	}
 	*/
+	
+	@GetMapping("/hello")
+	public String sayHello() {
+		return "heloooo!";
+	}
 
 }
