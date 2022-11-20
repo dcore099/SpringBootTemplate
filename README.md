@@ -10,6 +10,7 @@ A barebones template useful for some Spring boot projects.
 - Thymeleaf
 - Spring data JPA
 - Ready for web server deployment
+- Basic Bootstrap v5 added
 
 
 
