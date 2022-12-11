@@ -1,9 +1,9 @@
 package com.example.repository;
-/*
+
 import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
-*/
+
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class StoredProcedureRepository {
 	final static Logger logger = Logger.getLogger(StoredProcedureRepository.class);
-	/*
+	
 	@Autowired
 	private EntityManager em;
 	
@@ -23,7 +23,7 @@ public class StoredProcedureRepository {
  * @param param2
  * @return
  */
-	/*
+	
 	public String callProcedure(String param1, String param2) {
 		String out="No data from store procedure..";
 		
@@ -44,5 +44,5 @@ public class StoredProcedureRepository {
 		
 		return out;
 	}
-	*/
+	
 }
