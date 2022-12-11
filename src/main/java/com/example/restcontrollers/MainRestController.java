@@ -5,20 +5,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.service.BasicUserService;
+import com.example.service.IbasicUserService;
 
 @RestController
 @RequestMapping("/api")
 public class MainRestController {
-	/*
+	
 	@Autowired
-	BasicUserService service;
+	IbasicUserService service;
 	
 	/**
 	 * Endpoint para llamar el pkg
 	 * @return
 	 */
-	/*
+	
 	@GetMapping("/call")
 	public String call() {
 		String param1 = "valor1 bla";
@@ -26,7 +26,7 @@ public class MainRestController {
 		
 		return service.getData(param1, param2);
 	}
-	*/
+	
 	
 	@GetMapping("/hello")
 	public String sayHello() {
